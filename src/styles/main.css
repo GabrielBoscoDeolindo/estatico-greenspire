@@ -1,0 +1,95 @@
+* {  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+    display: grid;
+}
+
+#title {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 2.5   arem;
+    color: #226B5D;
+}
+
+#cenario-context {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+#main-text {
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+strong {
+    color: #226B5D;
+}
+
+#with-greenspire {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+@media (max-width: 1600px) {
+    #cenario-context, #with-greenspire {
+        gap: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #cenario-title {
+        font-size: 2.2rem;
+    }
+    #cenario-context, #with-greenspire {
+        gap: 100px;
+    }
+    #main-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #cenario-context, #with-greenspire {
+        gap: 70px;
+    }
+    #main-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #cenario-title {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    #cenario-context, #with-greenspire {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    #main-text {
+        font-size: 1.3rem;
+        margin-top: 20px;
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    #cenario-title {
+        font-size: 1.8rem;
+    }
+    #main-text {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,51 @@
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #0000001a;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.dark-theme {
+    background-color: #070707;
+    color: #ffffff;
+}
+
+
+.dark-theme article {
+    background-color: #070707 ;
+}
+.dark-theme header {
+    background-color: #111111 ;
+}
+
+
+.dark-theme p,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme article *:not(strong) {
+    color: #ffffff ;
+}
+
+
+.dark-theme #logo {
+    filter: none ;
+}
+
+
+.dark-theme strong {
+    color: #226B5D ;
+}
+
+
+.dark-theme #theme-toggle {
+    background: #ffffff1a;
+    color: #ffffff;
+}

@@ -7,89 +7,136 @@
 
 main {
     display: grid;
+    padding: 0 15px;
 }
 
 #title {
-    margin-top: 45px;
+    margin-top: 25px;
     text-align: center;
-    font-size: 2.5   arem;
+    font-size: 1.8rem;
     color: #226B5D;
+    line-height: 1.3;
 }
 
-#cenario-context {
-    margin-top: 80px;
+#cenario-context, #with-greenspire {
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
 }
 
 #main-text {
-    margin-top: 30px;
-    font-size: 1.8rem;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px;
 }
 
 strong {
     color: #226B5D;
 }
 
-#with-greenspire {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-}
-
-@media (max-width: 1600px) {
-    #cenario-context, #with-greenspire {
-        gap: 150px;
+/* Medium phones (landscape) and larger */
+@media (min-width: 576px) {
+    #title {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    #main-text {
+        font-size: 1.2rem;
+        max-width: 80%;
     }
 }
 
-@media (max-width: 1200px) {
-    #cenario-title {
+/* Tablets and larger */
+@media (min-width: 768px) {
+    #title {
         font-size: 2.2rem;
+        margin-top: 35px;
+    }
+    #cenario-context, #with-greenspire {
+        margin-top: 60px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    #main-text {
+        font-size: 1.4rem;
+        text-align: left;
+        max-width: 50%;
+    }
+}
+
+/* Large tablets and small laptops */
+@media (min-width: 992px) {
+    #title {
+        font-size: 2.3rem;
+    }
+    #cenario-context, #with-greenspire {
+        gap: 70px;
+    }
+    #main-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Laptops and desktops */
+@media (min-width: 1200px) {
+    #title {
+        font-size: 2.5rem;
+        margin-top: 45px;
     }
     #cenario-context, #with-greenspire {
         gap: 100px;
     }
     #main-text {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 }
 
-@media (max-width: 992px) {
+/* Large desktops */
+@media (min-width: 1600px) {
     #cenario-context, #with-greenspire {
-        gap: 70px;
-    }
-    #main-text {
-        font-size: 1.4rem;
+        gap: 150px;
     }
 }
 
+/* Estilo específico para o QR code do header */
+.header-qrcode {
+    width: 150px; /* Tamanho padrão para desktop */
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Ajustes para mobile */
 @media (max-width: 768px) {
-    #cenario-title {
-        font-size: 2rem;
-        margin-top: 30px;
+    .header-qrcode {
+        width: 200px; /* Tamanho aumentado para mobile */
+        margin: 20px auto; /* Centraliza e adiciona espaçamento */
+        display: block; /* Garante que ocupa toda a largura disponível */
     }
-    #cenario-context, #with-greenspire {
-        margin-top: 50px;
+    
+    /* Ajuste adicional se precisar de mais destaque */
+    @media (max-width: 576px) {
+        .header-qrcode {
+            width: 250px; /* Tamanho ainda maior para celulares pequenos */
+        }
+    }
+}
+
+/* Ajustes para o layout do header em mobile */
+@media (max-width: 768px) {
+    #Header-Right {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
     }
-    #main-text {
-        font-size: 1.3rem;
-        margin-top: 20px;
-        text-align: center;
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 576px) {
-    #cenario-title {
-        font-size: 1.8rem;
-    }
-    #main-text {
-        font-size: 1.1rem;
+    
+    #Smartphone {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
     }
 }
